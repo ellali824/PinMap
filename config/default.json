@@ -1,4 +1,0 @@
-{
-    "mongoURI" : "mongodb+srv://ella824:ella824@mern.kalhn.mongodb.net/test?retryWrites=true&w=majority",
-    "jwtSecret" : "shhdonttell"
-}

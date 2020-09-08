@@ -34,16 +34,7 @@ const ProfileItem = ({
         <Link to={`/profile/${_id}`} className='btn btn-primary'>
           view profile
         </Link>
-        {/*   <p className='my-1'>{location && <span>{location}</span>}</p> */}
       </div>
-      {/*  <ul>
-        {skills.slice(0, 4).map((skill, index) => (
-          <li key={index} className='text-primary'>
-            <i className='fas fa-check' /> {skill}
-          </li>
-        ))}
-      </ul>*/}
-     
     </div>
   );
 };

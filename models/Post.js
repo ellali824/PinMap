@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+//under construction 
 
 const PostSchema = new Schema({
   user: {

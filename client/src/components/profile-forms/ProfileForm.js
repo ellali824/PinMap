@@ -3,14 +3,12 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createProfile, getCurrentProfile } from '../../actions/profile';
-//changed a lot 
+
 const initialState = {
   basedin: '',
   recent: '',
   live: '',
   fave: '',
-  //skills: '',
- // githubusername: '',
   bio: '',
   twitter: '',
   vsco: '',
@@ -51,21 +49,9 @@ const ProfileForm = ({
     live,
     fave,
     bio,
-    /*
-    website,
-    location,
-    status,
-    skills,
-    githubusername,
-    bio,
-    */
     twitter,
     vsco,
     web,
-    /*
-    facebook,
-    linkedin,
-    */
     youtube,
     instagram
   } = formData;
@@ -89,23 +75,6 @@ const ProfileForm = ({
       <small>note: any information that you enter will be displayed on your public profile</small>
 
       <form className="form" onSubmit={onSubmit}>
-         {/*<div className="form-group">
-         
-          <select name="status" value={status} onChange={onChange}>
-            <option>* Select Professional Status</option>
-            <option value="Developer">Developer</option>
-            <option value="Junior Developer">Junior Developer</option>
-            <option value="Senior Developer">Senior Developer</option>
-            <option value="Manager">Manager</option>
-            <option value="Student or Learning">Student or Learning</option>
-            <option value="Instructor">Instructor or Teacher</option>
-            <option value="Intern">Intern</option>
-            <option value="Other">Other</option>
-          </select>
-          <small className="form-text">
-            Give us an idea of where you are at in your career
-          </small> 
-        </div>*/}
 
         <div className="form-group">
           <input
@@ -157,33 +126,7 @@ const ProfileForm = ({
             we know picking favorites is hard! but if you had to choose...
           </small>
         </div>
-        {/*   <div className="form-group">
-          <input
-            type="text"
-            placeholder="* Skills"
-            name="skills"
-            value={skills}
-            onChange={onChange}
-          />
-          <small className="form-text">
-            Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
-          </small>
-        </div> 
-      
-        <div className="form-group">
-          <input
-            type="text"
-            placeholder="Github Username"
-            name="githubusername"
-            value={githubusername}
-            onChange={onChange}
-          />
-          <small className="form-text">
-            If you want your latest repos and a Github link, include your
-            username
-          </small>
-        </div>
-        */}
+  
         <div className="form-group">
           <textarea
             placeholder="your most cherished."

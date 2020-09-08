@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 const ProfileAbout = ({
   profile: {
     bio,
-    skills,
     user: { name }
   }
 }) => (
@@ -13,17 +12,8 @@ const ProfileAbout = ({
       <Fragment>
         <h2 >{name}'s most <span className='dark-purple'>cherished.</span></h2>
         <p>{bio}</p>
-        {/* <div className='line' /> */}
       </Fragment>
     )}
-    {/*  <h2 className='text-primary'>Skill Set</h2>
-    <div className='skills'>
-      {skills.map((skill, index) => (
-        <div key={index} className='p-1'>
-          <i className='fas fa-check' /> {skill}
-        </div>
-      ))}
-    </div> */}
    
   </div>
 );

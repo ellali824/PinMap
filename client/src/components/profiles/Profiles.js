@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
 import ProfileItem from './ProfileItem';
 import { getProfiles } from '../../actions/profile';
-//NO CHAGES 
 
 const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
   useEffect(() => {
@@ -19,7 +18,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
         <Fragment>
           <h1 className='large text-primary'>those who love to travel...</h1>
           <p className='lead'>
-          view the best & most <span className='dark-purple'>cherished </span> memories of other travel lovers!
+          view the best & most <span className='dark-purple'>cherished</span> memories of other travel lovers!
           </p>
           <div className='profiles'>
             {profiles.length > 0 ? (

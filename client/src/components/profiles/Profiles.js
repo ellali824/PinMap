@@ -19,7 +19,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
         <Fragment>
           <h1 className='large text-primary'>those who love to travel...</h1>
           <p className='lead'>
-          browse the best & most cherished memories of other travel lovers!
+          view the best & most <span className='dark-purple'>cherished </span> memories of other travel lovers!
           </p>
           <div className='profiles'>
             {profiles.length > 0 ? (

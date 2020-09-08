@@ -82,9 +82,12 @@ const ProfileForm = ({
     <Fragment>
       <h1 className="large text-primary">edit your profile</h1>
       <p className="lead">
-       tell us a bit about yourself & your travels :) 
+       tell us a bit about yourself & your <span className="dark-purple">cherished</span> travels :) 
       </p>
       <small>* = required field</small>
+      <br></br>
+      <small>note: any information that you enter will be displayed on your public profile</small>
+
       <form className="form" onSubmit={onSubmit}>
          {/*<div className="form-group">
          
@@ -107,13 +110,13 @@ const ProfileForm = ({
         <div className="form-group">
           <input
             type="text"
-            placeholder="* B=based in"
+            placeholder="* based in"
             name="basedin"
             value={basedin}
             onChange={onChange}
           />
           <small className="form-text">
-            city, country, or continent where you're based in. (or "wanderer" if no definite place)
+            city, country, or continent where you're based in. (or "nowhere, I'm a wanderer" if no definite place)
           </small>
         </div>
 
@@ -145,7 +148,7 @@ const ProfileForm = ({
         <div className="form-group">
           <input
             type="text"
-            placeholder="if I had to pick a favorite trip, it would be…"
+            placeholder="if I HAD to pick a favorite trip, it would be…"
             name="fave"
             value={fave}
             onChange={onChange}
@@ -198,7 +201,7 @@ const ProfileForm = ({
             type="button"
             className="btn btn-light"
           >
-            share your other social network links!
+            share your social media links!
           </button>
           <span>optional</span>
         </div>
@@ -209,7 +212,7 @@ const ProfileForm = ({
               <i className="fab fa-youtube fa-2x" />
               <input
                 type="text"
-                placeholder="youTube URL"
+                placeholder="youtube URL"
                 name="youtube"
                 value={youtube}
                 onChange={onChange}

@@ -33,15 +33,15 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
 
   return (
     <Fragment>
-      <h1 className="large text-primary">Sign Up</h1>
+      <h1 className="large text-primary">sign up</h1>
       <p className="lead">
-        <i className="fas fa-user" /> Create Your Account
+        <i className="fas fa-user" /> create your account
       </p>
       <form className="form" onSubmit={onSubmit}>
         <div className="form-group">
           <input
             type="text"
-            placeholder="Name"
+            placeholder="name"
             name="name"
             value={name}
             onChange={onChange}
@@ -50,38 +50,38 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         <div className="form-group">
           <input
             type="email"
-            placeholder="Email Address"
+            placeholder="email address"
             name="email"
             value={email}
             onChange={onChange}
           />
+          
+        </div>
+        <div className="form-group">
+          <input
+            type="password"
+            placeholder="password"
+            name="password"
+            value={password}
+            onChange={onChange}
+          />
           <small className="form-text">
-            This site uses Gravatar so if you want a profile image, use a
-            Gravatar email (maybe change)
+            please choose a password with 8 or more characters
           </small>
         </div>
         <div className="form-group">
           <input
             type="password"
-            placeholder="Password"
-            name="password"
-            value={password}
-            onChange={onChange}
-          />
-        </div>
-        <div className="form-group">
-          <input
-            type="password"
-            placeholder="Confirm Password"
+            placeholder="confirm password"
             name="password2"
             value={password2}
             onChange={onChange}
           />
         </div>
-        <input type="submit" className="btn btn-primary" value="Register" />
+        <input type="submit" className="btn btn-primary" value="register" />
       </form>
       <p className="my-1">
-        Already have an account? <Link to="/login">Sign In</Link>
+        already have an account? <Link to="/login">sign in</Link>
       </p>
     </Fragment>
   );

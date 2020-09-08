@@ -14,7 +14,7 @@ const ProfileTop = ({
   return (
     <div className='profile-top bg-primary p-2'>
       <img className='round-img my-1' src={avatar} alt='' />
-      <h1 className='large'>{name}</h1>
+      <h1 className='large'><i>{name}</i></h1>
       <p className='lead'>
         based in {basedin}
         {/* {status} {company && <span> at {company}</span>} */}
@@ -27,7 +27,7 @@ const ProfileTop = ({
         if I could live anywhere, I would live in: {live}
         </p>
         <p>
-        if I had to pick a favorite trip, it would be: {fave}
+        if I HAD to pick a favorite trip, it would be: {fave}
         </p>
         {/*      <p>{location && <span>{location}</span>}</p>
  */}

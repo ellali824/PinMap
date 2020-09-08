@@ -4,7 +4,7 @@
   --secondary-color: #ded5ef;/*#0f311a; /* dark green*/
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
-  --success-color: #ffea00;
+  --success-color: #35a85b;
 }
 
 * {
@@ -407,6 +407,7 @@ button {
 .profile-about {
   grid-area: about;
   text-align: center;
+  white-space: pre-wrap; 
 }
 
 .profile-about .skills {

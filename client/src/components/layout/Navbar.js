@@ -8,21 +8,23 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
   const authLinks = (
     <ul>
       <li>
-        <Link to="/profiles">Travelers</Link>
+        <Link to="/profiles">Meet the Travelers</Link>
       </li>
+      {/*
       <li>
         <Link to="/posts">Add a Pin</Link>
       </li>
+       */}
       <li>
         <Link to="/dashboard">
           <i className="fas fa-user" />{' '}
-          <span className="hide-sm">Dashboard</span>
+          <span className="hide-sm">dashboard</span>
         </Link>
       </li>
       <li>
         <a onClick={logout} href="#!">
           <i className="fas fa-sign-out-alt" />{' '}
-          <span className="hide-sm">Logout</span>
+          <span className="hide-sm">logout</span>
         </a>
       </li>
     </ul>
@@ -31,24 +33,24 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
   const guestLinks = (
     <ul>
       <li>
-        <Link to="/profiles">Travelers</Link>
+        <Link to="/profiles">meet the travelers!</Link>
       </li>
       <li>
-        <Link to="/register">Register</Link>
+        <Link to="/register">register</Link>
       </li>
       <li>
-        <Link to="/login">Login</Link>
+        <Link to="/login">login</Link>
       </li>
     </ul>
   );
 
   return (
     <nav className="navbar bg-dark">
-      <h1>
+      <h3>
         <Link to="/">
-          <i className="fas fa-code" /> PinMap
+           cherished.
         </Link>
-      </h1>
+      </h3>
       <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
     </nav>
   );

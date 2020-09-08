@@ -140,9 +140,12 @@ router.get(
         user: user_id
       }).populate('user', ['name', 'avatar']);
 
-      if (!profile) return res.status(400).json({ msg: 'Profile not found' });
-
-      return res.json(profile);
+      if (!profile) {
+        return res.status(400).json({ msg: 'Profile not found' });
+      } else {
+        res.json(profile);
+      }
+     // return res.json(profile);
     } catch (err) {
       console.error(err.message);
       return res.status(500).json({ msg: 'Server error' });

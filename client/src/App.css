@@ -1,10 +1,10 @@
 /* Global Styles */
 :root {
-  --primary-color: #17a2b8;
-  --dark-color: #343a40;
+  --primary-color: #7a55bf;/*#35a85b;/* dark mauve */ 
+  --dark-color: #ded5ef;/*#0f311a; /* dark green*/
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
-  --success-color: #28a745;
+  --success-color: #ffea00;
 }
 
 * {
@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', monospace;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -124,6 +124,10 @@ img {
 }
 .my-3 {
   margin: 3rem 0;
+}
+
+#profiles-name{
+  font-style: italic;
 }
 
 .btn {
@@ -308,7 +312,7 @@ button {
   z-index: 1;
   width: 100%;
   top: 0;
-  border-bottom: solid 1px var(--primary-color);
+  border-bottom: solid 2.5px var(--primary-color);
   opacity: 0.9;
 }
 
@@ -317,7 +321,7 @@ button {
 }
 
 .navbar a {
-  color: #fff;
+  color: #181818; /*#fff; */
   padding: 0.45rem;
   margin: 0 0.25rem;
 }
@@ -347,6 +351,13 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.purple{
+  color: var(--dark-color);
+}
+.dark-purple{
+  color: var(--primary-color);
+
 }
 
 /* Profiles Page */
@@ -506,6 +517,7 @@ button {
   .large {
     font-size: 2rem;
   }
+  
 
   .lead {
     font-size: 1rem;

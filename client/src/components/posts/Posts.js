@@ -17,7 +17,6 @@ const Posts = ({ getPosts, post: { posts } }) => {
         <i className="fas fa-user" /> Welcome to the community
       </p>
       <PostForm />
-      
       <div className="posts">
         {posts.map((post) => (
           <PostItem key={post._id} post={post} />

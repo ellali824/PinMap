@@ -10,16 +10,19 @@ import ProfileAbout from './ProfileAbout';
 //import ProfileGithub from './ProfileGithub';
 
 import { getProfileById } from '../../actions/profile';
-import Map from "../maps/RecycleCentersMap";
+import { Map, GoogleApiWrapper } from 'google-maps-react';
 
-const KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+// const KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
+const mapStyles = {
+  width: '100%',
+  height: '100%'
+};
 
 const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
   useEffect(() => {
     getProfileById(match.params.id);
   }, [getProfileById, match.params.id]);
-
 
 
   return (
@@ -41,18 +44,10 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
           <div className="profile-grid my-1">
             <ProfileTop profile={profile} />
             <ProfileAbout profile={profile} />
-            <div className="profile-exp bg-white p-2">
-              <h2 className="text-primary">Map</h2>
-              <Fragment>
-              <Map
-           recycleCenters={this.props.recycleCenters}
-           googleMapURL={`https://maps.googleapis.com/maps/api/js?   key=${KEY}&v=3.exp&libraries=geometry,drawing,places`}
-           loadingElement={<div style={{ height: `100%` }} />}
-           containerElement={<div style={{ height: `600px`, width: `100%` }} />}
-           mapElement={<div style={{ height: `100%` }} />}
-        />
-              </Fragment>
               {/* 
+            <div className="profile-exp bg-white p-2">
+            
+            
                 {profile.experience.length > 0 ? (
                 <Fragment>
                   {profile.experience.map((experience) => (
@@ -65,9 +60,10 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
               ) : (
                 <h4>No experience credentials</h4>
               )}
-              */}
+             
               
             </div>
+             */}
 {/*}
             <div className="profile-edu bg-white p-2">
               <h2 className="text-primary">Education</h2>
@@ -94,7 +90,8 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
       )}
     </Fragment>
   );
-};
+}
+
 
 Profile.propTypes = {
   getProfileById: PropTypes.func.isRequired,
@@ -106,5 +103,9 @@ const mapStateToProps = (state) => ({
   profile: state.profile,
   auth: state.auth
 });
-
+/*
+export default GoogleApiWrapper({
+  apiKey: {KEY}
+})(MapContainer);
+*/ 
 export default connect(mapStateToProps, { getProfileById })(Profile);

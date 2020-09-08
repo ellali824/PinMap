@@ -5,6 +5,7 @@ const PostSchema = new Schema({
   user: {
     type: Schema.Types.ObjectId
   },
+  /*
   location: {
     type: String,
     required: true
@@ -15,6 +16,7 @@ const PostSchema = new Schema({
   activities: {
     type: String
   },
+  */
   text: {
     type: String,
     required: true

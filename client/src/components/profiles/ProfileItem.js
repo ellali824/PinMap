@@ -16,23 +16,23 @@ const ProfileItem = ({
       <img src={avatar} alt='' className='round-img' />
       
       <div>
-        <h2>{name}</h2>
+        <h2 id="profiles-name">{name}</h2>
         <p>
-          Based in: {basedin}
+          Based in <span className='dark-purple'> {basedin}</span>
         </p>
         <p>
-          Most recent travel: {recent}
+          Most recent travel: <span className='dark-purple'> {recent} </span>
         </p>
        
         <p>
-        If I could live anywhere, I would live in: {live}
+        If I could live anywhere, I would live in: <span className='dark-purple'> {live} </span>
         </p>
         <p>
-        If I had to pick a favorite trip, it would be: {fave}
+        If I HAD to pick a favorite trip, it would be: <span className='dark-purple'> {fave} </span>
         </p>
         <br></br>
         <Link to={`/profile/${_id}`} className='btn btn-primary'>
-          View Profile
+          view profile
         </Link>
         {/*   <p className='my-1'>{location && <span>{location}</span>}</p> */}
       </div>

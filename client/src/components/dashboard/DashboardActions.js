@@ -16,9 +16,10 @@ const DashboardActions = () => {
       */}
       <br></br>
       <br></br>
+  {/* 
       <p className="google-map">
         Your map
-      </p>
+      </p> */}
     
     </div>
   );

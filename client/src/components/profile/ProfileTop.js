@@ -16,18 +16,18 @@ const ProfileTop = ({
       <img className='round-img my-1' src={avatar} alt='' />
       <h1 className='large'>{name}</h1>
       <p className='lead'>
-        Based in: {basedin}
+        based in {basedin}
         {/* {status} {company && <span> at {company}</span>} */}
       </p>
       <p>
-         Most recent travel: {recent}
+         most recent travel: {recent}
         </p>
        
         <p>
-        If I could live anywhere, I would live in: {live}
+        if I could live anywhere, I would live in: {live}
         </p>
         <p>
-        If I had to pick a favorite trip, it would be: {fave}
+        if I had to pick a favorite trip, it would be: {fave}
         </p>
         {/*      <p>{location && <span>{location}</span>}</p>
  */}
@@ -47,12 +47,12 @@ const ProfileTop = ({
         )}
         {social && social.vsco && (
           <a href={social.vsco} target='_blank' rel='noopener noreferrer'>
-            <i className='fab fa-facebook fa-2x' />
+            <i className='fa fa-camera-retro fa-2x' />
           </a>
         )}
         {social && social.web && (
           <a href={social.web} target='_blank' rel='noopener noreferrer'>
-            <i className='fab fa-globe fa-2x' />
+            <i className='fa fa-globe fa-2x' />
           </a>
         )}
         {social && social.youtube && (

@@ -80,9 +80,9 @@ const ProfileForm = ({
 
   return (
     <Fragment>
-      <h1 className="large text-primary">Edit Your Profile</h1>
+      <h1 className="large text-primary">edit your profile</h1>
       <p className="lead">
-        <i className="fas fa-user" /> Add some changes to your profile
+       tell us a bit about yourself & your travels :) 
       </p>
       <small>* = required field</small>
       <form className="form" onSubmit={onSubmit}>
@@ -107,51 +107,51 @@ const ProfileForm = ({
         <div className="form-group">
           <input
             type="text"
-            placeholder="* Based in"
+            placeholder="* B=based in"
             name="basedin"
             value={basedin}
             onChange={onChange}
           />
           <small className="form-text">
-            City, country, or continent where you're based in. Or "wanderer" if no definite place.
+            city, country, or continent where you're based in. (or "wanderer" if no definite place)
           </small>
         </div>
 
         <div className="form-group">
           <input
             type="text"
-            placeholder="Most recent travel was to..."
+            placeholder="most recent travel was to..."
             name="recent"
             value={recent}
             onChange={onChange}
           />
           <small className="form-text">
-            Any travel that you've done most recently. Yes, getting the mail counts. 
+            any travel that you've done most recently. (yes, right now getting the mail counts) 
           </small>
         </div>
         <div className="form-group">
           <input
             type="text"
-            placeholder="If I could live anywhere, I would live in…
+            placeholder="if I could live anywhere, I would live in…
             "
             name="live"
             value={live}
             onChange={onChange}
           />
           <small className="form-text">
-            Your dream city, town, country, etc. to live in. 
+            your dream city, town, country, etc. to live in. 
           </small>
         </div>
         <div className="form-group">
           <input
             type="text"
-            placeholder="If I had to pick a favorite trip, it would be…"
+            placeholder="if I had to pick a favorite trip, it would be…"
             name="fave"
             value={fave}
             onChange={onChange}
           />
           <small className="form-text">
-            Picking favorites is hard! But if you had to choose...
+            we know picking favorites is hard! but if you had to choose...
           </small>
         </div>
         {/*   <div className="form-group">
@@ -183,12 +183,12 @@ const ProfileForm = ({
         */}
         <div className="form-group">
           <textarea
-            placeholder="Say some more about yourself!"
+            placeholder="your most cherished."
             name="bio"
             value={bio}
             onChange={onChange}
           />
-          <small className="form-text">What are some other fun, cool, or interesting things about you?
+          <small className="form-text">what are some of your most cherished travels/adventures?
           </small>
         </div>
 
@@ -198,9 +198,9 @@ const ProfileForm = ({
             type="button"
             className="btn btn-light"
           >
-            Add Social Network Links
+            share your other social network links!
           </button>
-          <span>Optional</span>
+          <span>optional</span>
         </div>
 
         {displaySocialInputs && (
@@ -209,7 +209,7 @@ const ProfileForm = ({
               <i className="fab fa-youtube fa-2x" />
               <input
                 type="text"
-                placeholder="YouTube URL"
+                placeholder="youTube URL"
                 name="youtube"
                 value={youtube}
                 onChange={onChange}
@@ -219,17 +219,17 @@ const ProfileForm = ({
               <i className="fab fa-instagram fa-2x" />
               <input
                 type="text"
-                placeholder="Instagram URL"
+                placeholder="instagram URL"
                 name="instagram"
                 value={instagram}
                 onChange={onChange}
               />
             </div>
             <div className="form-group social-input">
-              <i className="fab fa-globe fa-2x" />
+              <i className="fa fa-globe fa-2x" />
               <input
                 type="text"
-                placeholder="Website URL"
+                placeholder="website URL"
                 name="web"
                 value={web}
                 onChange={onChange}
@@ -239,17 +239,17 @@ const ProfileForm = ({
               <i className="fab fa-twitter fa-2x" />
               <input
                 type="text"
-                placeholder="Twitter URL"
+                placeholder="twitter URL"
                 name="twitter"
                 value={twitter}
                 onChange={onChange}
               />
             </div>
             <div className="form-group social-input">
-              <i className="fab fa-facebook fa-2x" />
+              <i className="fa fa-camera-retro fa-2x" />
               <input
                 type="text"
-                placeholder="VSCO URL"
+                placeholder="vsco URL"
                 name="vsco"
                 value={vsco}
                 onChange={onChange}
@@ -258,9 +258,9 @@ const ProfileForm = ({
           </Fragment>
         )}
 
-        <input type="submit" className="btn btn-primary my-1" />
+        <input type="submit" value="submit" className="btn btn-primary my-1"/>
         <Link className="btn btn-light my-1" to="/dashboard">
-          Go Back
+          go back
         </Link>
       </form>
     </Fragment>

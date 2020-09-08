@@ -18,17 +18,17 @@ const ProfileItem = ({
       <div>
         <h2 id="profiles-name">{name}</h2>
         <p>
-          Based in <span className='dark-purple'> {basedin}</span>
+          based in <span className='dark-purple'> {basedin}</span>
         </p>
         <p>
-          Most recent travel: <span className='dark-purple'> {recent} </span>
+          most recent travel: <span className='dark-purple'> {recent} </span>
         </p>
        
         <p>
-        If I could live anywhere, I would live in: <span className='dark-purple'> {live} </span>
+        if I could live anywhere, I would live in: <span className='dark-purple'> {live} </span>
         </p>
         <p>
-        If I HAD to pick a favorite trip, it would be: <span className='dark-purple'> {fave} </span>
+        if I HAD to pick a favorite trip, it would be: <span className='dark-purple'> {fave} </span>
         </p>
         <br></br>
         <Link to={`/profile/${_id}`} className='btn btn-primary'>

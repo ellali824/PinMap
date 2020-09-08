@@ -11,7 +11,7 @@ const ProfileAbout = ({
   <div className='profile-about bg-light p-2'>
     {bio && (
       <Fragment>
-        <h2 className='text-primary'>Bio</h2>
+        <h2 >{name}'s most <span className='dark-purple'> cherished.</span></h2>
         <p>{bio}</p>
         {/* <div className='line' /> */}
       </Fragment>

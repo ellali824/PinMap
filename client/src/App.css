@@ -1,7 +1,7 @@
 /* Global Styles */
 :root {
   --primary-color: #7a55bf;/*#35a85b;/* dark mauve */ 
-  --dark-color: #ded5ef;/*#0f311a; /* dark green*/
+  --secondary-color: #ded5ef;/*#0f311a; /* dark green*/
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #ffea00;
@@ -71,7 +71,7 @@ img {
 }
 
 .text-dark {
-  color: var(--dark-color);
+  color: var(--secondary-color);
 }
 
 /* Padding */
@@ -172,7 +172,7 @@ img {
 .bg-light,
 .badge-light,
 .alert-light {
-  background: var(--light-color);
+  background: var(--secondary-color);
   color: #333;
 }
 
@@ -180,7 +180,7 @@ img {
 .bg-dark,
 .badge-dark,
 .alert-dark {
-  background: var(--dark-color);
+  background: var(--secondary-color);
   color: #fff;
 }
 
@@ -353,7 +353,7 @@ button {
   text-align: center;
 }
 .purple{
-  color: var(--dark-color);
+  color: var(--secondary-color);
 }
 .dark-purple{
   color: var(--primary-color);
@@ -401,7 +401,7 @@ button {
 }
 
 .profile-top .icons a:hover {
-  color: var(--dark-color);
+  color: var(--secondary-color);
 }
 
 .profile-about {

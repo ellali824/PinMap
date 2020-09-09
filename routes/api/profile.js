@@ -6,8 +6,8 @@ const auth = require('../../middleware/auth');
 const { check, validationResult } = require('express-validator');
 
 //solves cors issue
-var cors = require('cors');
-router.use(cors()); 
+//var cors = require('cors');
+//router.use(cors()); 
 
 // bring in normalize to give us a proper url, regardless of what user entered
 const normalize = require('normalize-url');
